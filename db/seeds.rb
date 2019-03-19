@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+  # load to DB 
+  Ticketlist.create ticket: 'EURUSD', premium: '0'
+  Ticketlist.create ticket: 'USDCAD', premium: '0'
+  Ticketlist.create ticket: 'USDJPY', premium: '1'
+  Ticketlist.create ticket: 'GBPUSD', premium: '1'
