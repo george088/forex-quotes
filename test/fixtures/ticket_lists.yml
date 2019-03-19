@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ticket: MyString
+  for_premium: 1
+
+two:
+  ticket: MyString
+  for_premium: 1
