@@ -19,6 +19,11 @@ class Api::V1::QuotesController < ApplicationController
     render json: {tiketlist: Ticketlist.tickets(@user.type_role), status: :ok}
   end
 
+  # api/v1/quotes/avalable_dates?key=?&ticket=?
+  def avalable_dates
+    render json: {"avalable_dates_#{params[:ticket]}" => Quote.avalable_dates(params[:ticket]), status: :ok}
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_quote
